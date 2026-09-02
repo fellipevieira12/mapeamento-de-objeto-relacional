@@ -10,6 +10,7 @@ public class Client {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpa");
 		EntityManager em = emf.createEntityManager();
 		
@@ -23,6 +24,7 @@ public class Client {
 		System.out.println(p2);
 		System.out.println(p3);
 		
+		// Persistindo o banco de dados
 		em.getTransaction().begin();
 		em.persist(p1);
 		em.persist(p2);
@@ -31,5 +33,5 @@ public class Client {
 		em.close();
 		emf.close();
 	}
-
+	
 }
