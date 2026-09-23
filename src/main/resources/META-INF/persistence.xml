@@ -7,17 +7,12 @@
 
 	<persistence-unit name="jpa"
 		transaction-type="RESOURCE_LOCAL">
-		
-		<!-- Registro manual das entidades para evitar o erro de Unknown Entity -->
-		<class>objects.Categoria</class>
-		<class>objects.Produto</class>
-
 		<properties>
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://localhost/jpa?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true" />
+				value="jdbc:mysql://localhost/jpa?useSSL=false&amp;serverTimezone=UTC" />
 
 			<property name="javax.persistence.jdbc.driver"
-				value="com.mysql.cj.jdbc.Driver" />
+				value="com.mysql.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password" value="123456" />
 

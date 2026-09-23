@@ -11,7 +11,6 @@ public class Categoria {
     private String descricao;
     private String ativo;
 
-    // A JPA exige um construtor vazio
     public Categoria() {
     }
 
